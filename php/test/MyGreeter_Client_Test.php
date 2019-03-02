@@ -1,5 +1,6 @@
 <?php
 
+include_once 'MyGreeter.php';
 class MyGreeter_Client_Test extends \PHPUnit_Framework_TestCase
 {
     public function setUp()
@@ -21,4 +22,22 @@ class MyGreeter_Client_Test extends \PHPUnit_Framework_TestCase
             strlen($this->greeter->getGreeting()) > 0
         );
     }
+    
+    public function assertEquals()
+    {
+
+    }
+    public function assertTrue()
+    {
+
+    }
+}
+
+$object = new MyGreeter_Client_Test();
+$object->setUp();
+$object->test_Instance();
+$object->test_getGreeting();
+
+class PHPUnit_Framework_TestCase{
+
 }
